@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="registration">
+            <h2>Register</h2>
+            <div class="message" id="registrationMessage"></div>
+            <form id="registrationForm">
+                <label for="regUsername">Username:</label>
+                <input type="text" id="regUsername" required><br><br>
+                <label for="regPassword">Password:</label>
+                <input type="password" id="regPassword" required><br><br>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <div id="login" class="hidden">
+            <h2>Login</h2>
+            <div class="message" id="loginMessage"></div>
+            <form id="loginForm">
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" required><br><br>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" required><br><br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div id="quiz" class="hidden">
+            <h2>JavaScript Quiz</h2>
+            <div class="message" id="quizMessage"></div>
+            <form id="quizForm">
+                <div class="question">
+                    <label>Question 1: Which type of JavaScript language is?</label><br>
+                    <input type="radio" name="q1" value="Object-Oriented"> Object-Oriented<br>
+                    <input type="radio" name="q1" value="Object-Based"> Object-Based<br>
+                    <input type="radio" name="q1" value="Assembly-language"> Assembly-language<br>
+                    <input type="radio" name="q1" value="High-level"> High-level<br><br>
+                </div>
+                <div class="question">
+                    <label>Question 2: Which one of the following also known as Conditional Expression:</label><br>
+                    <input type="radio" name="q2" value="Alternative to if-else"> Alternative to if-else<br>
+                    <input type="radio" name="q2" value="Switch statement"> Switch statement<br>
+                    <input type="radio" name="q2" value="If-then-else statement"> If-then-else statement<br>
+                    <input type="radio" name="q2" value="Immediate if"> Immediate if<br><br>
+                </div>
+                <div class="question">
+                    <label>Question 3: In JavaScript, what is a block of statement?</label><br>
+                    <input type="radio" name="q3" value="Conditional block"> Conditional block<br>
+                    <input type="radio" name="q3" value="Block that combines a number of statements into a single compound statement"> Block that combines a number of statements into a single compound statement<br>
+                    <input type="radio" name="q3" value="Both conditional block and a single statement"> Both conditional block and a single statement<br>
+                    <input type="radio" name="q3" value="Block that contains a single statement"> Block that contains a single statement<br><br>
+                </div>
+                <div class="question">
+                    <label>Question 4: When interpreter encounters an empty statements, what it will do:</label><br>
+                    <input type="radio" name="q4" value="Shows a warning"> Shows a warning<br>
+                    <input type="radio" name="q4" value="Prompts to complete the statement"> Prompts to complete the statement<br>
+                    <input type="radio" name="q4" value="Throws an error"> Throws an error<br>
+                    <input type="radio" name="q4" value="Ignores the statements"> Ignores the statements<br><br>
+                </div>
+                <div class="question">
+                    <label>Question 5: The "function" and "var" are known as:</label><br>
+                    <input type="radio" name="q5" value="Keywords"> Keywords<br>
+                    <input type="radio" name="q5" value="Data types"> Data types<br>
+                    <input type="radio" name="q5" value="Declaration statements"> Declaration statements<br>
+                    <input type="radio" name="q5" value="Prototypes"> Prototypes<br><br>
+                </div>
+                <div class="question">
+                    <label>Question 6: Which of the following variables takes precedence over the others if the names are the same?</label><br>
+                    <input type="radio" name="q6" value="Global variable"> Global variable<br>
+                    <input type="radio" name="q6" value="The local element"> The local element<br>
+                    <input type="radio" name="q6" value="None of the above"> None of the above<br>
+                    <input type="radio" name="q6" value="All of the above"> All of the above<br><br>
+                </div>
+                <div class="question">
+                    <label>Question 7: Which one of the following is the correct way for calling the JavaScript code?</label><br>
+                    <input type="radio" name="q7" value="Preprocessor"> Preprocessor<br>
+                    <input type="radio" name="q7" value="Triggering Event"> Triggering Event<br>
+                    <input type="radio" name="q7" value="RMI"> RMI<br>
+                    <input type="radio" name="q7" value="Function/Method"> Function/Method<br><br>
+                </div>
+                <div class="question">
+                    <label>Question 8: Which of the following way is correct to create an object?</label><br>
+                    <input type="radio" name="q8" value="var obj = {}; "> var obj = {}; <br>
+                    <input type="radio" name="q8" value="var obj = object();"> var obj = object();<br>
+                    <input type="radio" name="q8" value="var obj = new Object();"> var obj = new Object();<br>
+                    <input type="radio" name="q8" value="var obj = new object();"> var obj = new object();<br><br>
+                </div>
+                <div class="question">
+                    <label>Question 9: Which one of the following is not considered as an error:</label><br>
+                    <input type="radio" name="q9" value="Syntax error"> Syntax error<br>
+                    <input type="radio" name="q9" value="Missing of semicolons"> Missing of semicolons<br>
+                    <input type="radio" name="q9" value="Division by zero"> Division by zero<br>
+                    <input type="radio" name="q9" value="All of the mentioned"> All of the mentioned<br><br>
+                </div>
+                <div class="question">
+                    <label>Question 10: Which of the following number object function returns the value of the number?</label><br>
+                    <input type="radio" name="q10" value="toString()"> toString()<br>
+                    <input type="radio" name="q10" value="valueOf()"> valueOf()<br>
+                    <input type="radio" name="q10" value="toLocaleString()"> toLocaleString()<br>
+                    <input type="radio" name="q10" value="toPrecision()"> toPrecision()<br><br>
+                </div>
+                <button type="submit">Submit Quiz</button>
+            </form>
+        </div>
+
+        <div id="result" class="hidden">
+            <h2>Quiz Result</h2>
+            <div class="message" id="resultMessage"></div>
+            <p>Your score is: <span id="score"></span>%</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
